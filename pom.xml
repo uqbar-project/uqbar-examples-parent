@@ -2,24 +2,42 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
+	<groupId>org.uqbar-project</groupId>
 	<artifactId>uqbar-examples-parent</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.0</version>
 	<packaging>pom</packaging>
-	
+
 	<name>Uqbar Examples Parent</name>
 	<description>Parent POM with common settings for Uqbar examples (deploy to Uqbar repo, build with JDK7)</description>
+	<url>http://www.uqbar-project.org</url>
 
-	<parent>
-		<groupId>org.uqbar-project</groupId>
-		<artifactId>uqbar-parent-project</artifactId>
-		<version>1.9-alpha-1</version>
-	</parent>
-	
 	<properties>
+		<encoding>UTF-8</encoding>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.7</maven.compiler.source>
 		<maven.compiler.target>1.7</maven.compiler.target>
+		<scm.gitServer>scm:git:https://github.com/uqbar-project</scm.gitServer>
+		<scm.gitRepository>uqbar-parent-project</scm.gitRepository>
 		<uqbar.repo.url>ftp://ftp.uqbar-wiki.org</uqbar.repo.url>
 	</properties>
+
+	<scm>
+		<connection>${scm.gitServer}/${scm.gitRepository}</connection>
+		<developerConnection>${scm.gitServer}/${scm.gitRepository}</developerConnection>
+		<url>${scm.gitServer}/${scm.gitRepository}</url>
+	</scm>
+	
+	<organization>
+		<name>Uqbar Project</name>
+		<url>http://www.uqbar-project.org</url>
+	</organization>
+	
+	<licenses>
+		<license>
+			<name>GNU Library or Lesser General Public License (LGPL) 3.0</name>
+			<url>http://www.opensource.org/licenses/lgpl-3.0.html</url>
+		</license>
+	</licenses>
 
 	<distributionManagement>
 		<repository>
@@ -121,5 +139,5 @@
 			</plugin>
 		</plugins>
 	</reporting>
-	
+
 </project>
