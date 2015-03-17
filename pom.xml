@@ -4,6 +4,7 @@
 
 	<artifactId>uqbar-examples-parent</artifactId>
 	<version>1.0-RELEASE</version>
+	<packaging>pom</packaging>
 	
 	<name>Uqbar Examples Parent</name>
 	<description>Parent POM with common settings for Uqbar examples (deploy to Uqbar repo, build with JDK7)</description>
