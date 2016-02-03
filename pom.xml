@@ -3,7 +3,7 @@
 
 	<groupId>org.uqbar-project</groupId>
 	<artifactId>uqbar-examples-parent</artifactId>
-	<version>1.2</version>
+	<version>1.3-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>Uqbar Examples Parent</name>
